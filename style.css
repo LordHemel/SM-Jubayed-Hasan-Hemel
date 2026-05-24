@@ -49,6 +49,22 @@ body {
     color: #020617 !important;
     padding: 6px 12px;
     border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-outline {
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-outline:hover {
+    background: #38bdf8;
+    color: #020617;
 }
 
 /* SECTIONS */
@@ -56,13 +72,11 @@ body {
     padding: 90px 12%;
 }
 
-/* CENTER ALL SECTION TITLES EXCEPT CONTACT */
 .section h2 {
     text-align: center;
     margin-bottom: 50px;
 }
 
-/* CONTACT SECTION TITLE LEFT-ALIGNED */
 #contact h2 {
     text-align: left;
     margin-bottom: 50px;
@@ -82,11 +96,11 @@ body {
     height: 200px;
     object-fit: cover;
     border: 3px solid #38bdf8;
-    border-radius: 0; /* square */
+    border-radius: 0;
 }
 
 .about-text {
-    text-align: justify; /* aligns both sides */
+    text-align: justify;
     font-size: 16px;
     line-height: 1.8;
 }
@@ -95,7 +109,7 @@ body {
 .skills-list {
     list-style: none;
     padding-left: 0;
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -107,23 +121,66 @@ body {
     font-size: 16px;
 }
 
-/* GALLERY */
-.gallery {
+/* PROJECTS */
+.project-card {
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 8px;
+    border-left: 4px solid #38bdf8;
+}
+
+.project-card h3 {
+    font-size: 22px;
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.project-tags span {
+    background: #0f172a;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.project-screenshots {
+    display: flex;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .img-box {
-    width: 260px;
+    width: 280px;
     height: 180px;
-    border: 2px dashed #38bdf8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    color: #94a3b8;
+    border: 2px solid #38bdf8;
+    overflow: hidden;
+    border-radius: 4px;
 }
 
 .img-box img {
